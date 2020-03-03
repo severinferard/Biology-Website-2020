@@ -1,5 +1,4 @@
 function isElementInViewport(el) {
-    //special bonus for those using jQuery
     if (typeof jQuery === "function" && el instanceof jQuery) {
       el = el[0];
     }
@@ -10,10 +9,10 @@ function isElementInViewport(el) {
       rect.left >= 0 &&
       rect.bottom <=
         (window.innerHeight ||
-          document.documentElement.clientHeight) /*or $(window).height() */ &&
+          document.documentElement.clientHeight) &&
       rect.right <=
         (window.innerWidth ||
-          document.documentElement.clientWidth) /*or $(window).width() */
+          document.documentElement.clientWidth) 
     );
   }
   
@@ -103,30 +102,10 @@ function isElementInViewport(el) {
     var body = document.body,
     html = document.documentElement;
 
-    // var height = Math.max( body.scrollHeight, body.offsetHeight, 
-    //                    html.clientHeight, html.scrollHeight, html.offsetHeight );
-    // document.getElementById("particles-js").style.height = height + "px"
-    // console.log(height);
     
 
     var menuBubbles = document.getElementsByClassName("circles")
     
-    
-  //   var h = setInterval(function () {
-      
-  //     for (let i = 0; i < menuBubbles.length; i++) {
-  //       menuBubbles[i].style.transition = "2s "
-  //       var distX = Math.floor(Math.random()*50) + 1; 
-  //       var distY = Math.floor(Math.random()*50) + 1; 
-  //       distX *= Math.floor(Math.random()*2) == 1 ? 1 : -1; 
-  //       distY *= Math.floor(Math.random()*2) == 1 ? 1 : -1; 
-
-  //       menuBubbles[i].style.transform = "translate("+ distX+"px, "+ distY+"px)";
-  //       console.log(menuBubbles[i].style.transform);
-        
-        
-  //     }
-  //  }, 1000)
 
 
 

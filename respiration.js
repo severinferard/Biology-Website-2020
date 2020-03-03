@@ -1,5 +1,4 @@
 function isElementInViewport(el) {
-    //special bonus for those using jQuery
     if (typeof jQuery === "function" && el instanceof jQuery) {
       el = el[0];
     }
@@ -10,10 +9,10 @@ function isElementInViewport(el) {
       rect.left >= 0 &&
       rect.bottom <=
         (window.innerHeight ||
-          document.documentElement.clientHeight) /*or $(window).height() */ &&
+          document.documentElement.clientHeight) &&
       rect.right <=
         (window.innerWidth ||
-          document.documentElement.clientWidth) /*or $(window).width() */
+          document.documentElement.clientWidth) 
     );
   }
   
@@ -79,19 +78,6 @@ function isElementInViewport(el) {
             document.documentElement.offsetHeight)) * 100 * 15.5;
       document.getElementById("back-image-respiration").style.backgroundPosition = "0 " + pos + "%";
 
-    //   if (document.getElementsByClassName("circle-menu-respi")[0].getBoundingClientRect().top < 400) {
-    //     document.getElementsByClassName("circle-menu-respi")[0].style.background = "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 100%);"
-    //     var courses =this.document.getElementsByClassName("cours")
-    //     for (var i = 0; i < courses.length; i++){
-    //       courses[i].style.background = "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 100%);"
-    //     }
-    //   } else {
-    //     document.getElementsByClassName("circle-menu-respi")[0].style.backgroundColor = "white"
-    //     var courses =this.document.getElementsByClassName("cours")
-    //     for (var i = 0; i < courses.length; i++){
-    //       courses[i].style.backgroundColor = "white"
-    //   }
-    // }
 
     };
   
@@ -152,23 +138,7 @@ function isElementInViewport(el) {
     
 
     var menuBubbles = document.getElementsByClassName("circles")
-    
-    
-  //   var h = setInterval(function () {
-      
-  //     for (let i = 0; i < menuBubbles.length; i++) {
-  //       menuBubbles[i].style.transition = "2s "
-  //       var distX = Math.floor(Math.random()*50) + 1; 
-  //       var distY = Math.floor(Math.random()*50) + 1; 
-  //       distX *= Math.floor(Math.random()*2) == 1 ? 1 : -1; 
-  //       distY *= Math.floor(Math.random()*2) == 1 ? 1 : -1; 
 
-  //       menuBubbles[i].style.transform = "translate("+ distX+"px, "+ distY+"px)";
-  //       console.log(menuBubbles[i].style.transform);
-        
-        
-  //     }
-  //  }, 1000)
 
 
   });
