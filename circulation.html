@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Gas Exchanges: The Heart</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="heart.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <script src="circulation.js"></script>
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>
+<body>
+    <div class="header">
+        <nav class="topnav">
+            <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heart.html">The Heart</a></li>
+            <li><a href="respiration.html">The Lungs</a></li>
+            <li><a href="circulation.html">The blood circulation</a></li>
+            </ul>
+        </nav>
+        </div>
+    <div id="back-image-circulation">
+        <h6>The blood circulation</h6>
+    </div>
+    <!-- <div class="color-strip blue-strip"></div> -->
+    
+            <div class="introduction">
+                <div class="intro-text text-justify">
+                    Since the cells of an organ need O<sub>2</sub> to produce their energy through cellular respiration, the blood system transports O<sub>2</sub> to deliver them. In exchange, blood brings CO<sub>2</sub>, a product of respiration, back to the heart and lungs in order to evacuate it.
+                </div>
+            </div>
+
+    </div>
+
+
+
+    <div class="block"><div class="straight-course padded"><h1>Structure of the vascular system</h1></div></div>
+        <div class="block">
+            <div class="straight-course padded">
+                <div class="cours-title"></div>
+                <div class="cours-texte">
+                    The <strong>vascular system</strong>, also called the circulatory system, is a network of cylindrical vessels built around the heart which transport blood through the body. It allows the exchange of gas and the distribution of nutrients in all the organs. 
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="particles-sideways-red"></div>
+    
+        <div class="block">
+            <div class="row">
+                <div class="illustration-wrapper right">
+                    <div class="illustration" >
+                        <div class="caption" width="500">Figure 1: Closed circulatory system. OpenStax College. CC BY-SA 3.0
+                        </div>
+                        <img src="images/blood-circuit.png" alt=""  width="500" >
+                    </div>
+                </div>
+                
+                <div class="text-holder left">
+                    <div class="cours-title">Types of circulatory system</div>
+                    <br>
+                    <br>
+                    In vertebrate organisms and some invertebrates, the vascular system is <strong>closed-loop</strong>: the blood is contained in unidirectional vessels linking one organ to another. On the other hand, arthropods such as insects, crustaceans and mollusks, have an <strong>open circulatory system</strong> where the blood is pumped into the hemocoel, a cavity holding the animal’s organs in hemolymph, an interstitial fluid similar to blood. When the animal’s heart beats, the <strong>hemolymph</strong > circulates between the organs in the hemocoel and enters the heart through small openings, the ostia. With the repetition of this movement, the nutrients and gases are exchanged.
+                    </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="illustration-wrapper">
+                <div class="illustration" >
+                    <div class="caption" width="500">Figure 1: Closed circulatory system. OpenStax College. CC BY-SA 3.0
+                    </div>
+                    <img src="images/bee.png" alt=""  width="500" >
+
+            </div>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="straight-course padded">
+            <div class="cours-title">Different blood vessels</div>
+            <div class="cours-texte">
+                There are three types of vessels: <strong>arteries, veins and capillaries</strong>.
+                Arteries carry blood away from the heart toward body tissues. Consequently, they often transport oxygenated blood. They are thick, elastic and located deep in the body to support high blood pressure due to the heart systole. As the arteries move away from the heart, they divide into smaller vessels called arterioles. Veins return mostly deoxygenated blood to the heart. They are thinner than arteries, elastic and can be found closer to the skin. They subdivide into smaller venules. Arteries and veins have a similar structure. The vessel cavity is surrounded by endothelium, a layer of epithelial cells. Then, there is a layer of muscle tissue and a final one of connective tissue.            </div>
+            
+        </div>
+        <div class="illustration-wrapper">
+            <div class="illustration" >
+                <div class="caption" width="500">Figure 1: Closed circulatory system. OpenStax College. CC BY-SA 3.0
+                </div>
+                <img src="images/triple.png" alt=""  height="400" >
+
+        </div>
+    </div>
+    </div>
+
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper left">
+                <div class="illustration" >
+                    <div class="caption" width="500">
+                    </div>
+                    <img src="images/warning.png" alt=""  width="100" >
+                </div>
+            </div>
+            
+            <div class="text-holder right">
+                <strong><strong>Be careful!</strong></strong>
+                Arteries can carry deoxygenated blood and veins oxygenated one. For example, the pulmonary artery brings deoxygenated blood from the heart to the lungs. Since it moves away from the heart, it is called an artery. Similarly, the pulmonary vein carries the oxygenated blood from the lungs to the heart.
+                                </div>
+        </div>
+    </div>
+
+    <div id="particles-sideways-blue"></div>
+    <div class="test"></div>
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper right">
+                <div class="illustration" >
+                    <div class="caption" width="500">
+                    </div>
+                    <img src="images/capillary.png" alt=""  width="500" >Figure 4: Structure of a capillary. CC BY-SA 3.0
+                </div>
+            </div>
+            
+            <div class="text-holder left">
+                Capillaries have a <strong>smaller diameter</strong> than arteries and veins. Their thin wall is composed only of endothelial cells surrounded by pericytic cells. On the outside, the vessel is covered by a basement membrane. This structure allows the <strong>exchange of substances between blood and interstitial liquid</strong>.                                </div>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="straight-course padded">
+            <div class="cours-title"></div>
+            <div class="cours-texte">
+            A <strong>capillary bed</strong> corresponds to a <strong>high concentration of capillaries</strong> to exchange gas, proteins and nutrients with an organ. They constitute the point where the blood coming from the heart is now returning towards it.A capillary bed corresponds to a high concentration of capillaries to exchange gas, proteins and nutrients with an organ. They constitute the point where the blood coming from the heart is now returning towards it.            
+        </div>
+        <div class="illustration-wrapper">
+            <div class="illustration" >
+                <div class="caption" width="500">Figure 5: Capillary bed. OpenStax College. CC BY-SA 3.0
+                </div>
+                <img src="images/capillary-bed.png" alt=""  width="500" >
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper left">
+                <div class="illustration" >
+                    <div class="caption" width="500">
+                    </div>
+                    <img src="images/pressure.png" alt=""  width="500" >Figure 6: Systemic blood pressure. OpenStax College. CC-BY 3.0
+                </div>
+            </div>
+            
+            <div class="text-holder right">
+                <div class="cours-title">Blood Pressure</div>
+                Blood circulation has a direction determined by <strong>blood pressure</strong>. Indeed, a liquid always moves from regions with a <strong>high pressure</strong> to locations with a <strong>lower one</strong>. When the heart contracts, it creates the biggest pressure of the body and consequently sends the blood towards the arteries. Under the pressure, the membrane of arteries get extended thanks to its elasticity before getting back to its original shape. The progression of blood through these vessels is allowed by this distortion.
+                At the end of the arteries, the blood enters capillaries and arteries which small diameter presents a strong <strong>resistance to high blood pressure</strong>. The capillaries network constitute an intermediate between arteries and veins to <strong>decrease blood pressure</strong> so that the veins can support it. <br>Troubles regarding high blood pressure, or hypertension, can lead to cardiovascular diseases. This pathology makes the heart pump harder to send blood to the body. As a result, it may cause hardening and narrowing of the arteries, also known as atherosclerosis.
+
+                        </div>
+    </div>
+    </div>
+
+    <div class="block">
+        <div class="straight-course padded">
+            <div class="cours-title">Blood velocity</div>
+            <div class="cours-texte">
+                Blood flow velocity varies according to the type of vessel. Blood speed is the <strong>lowest in capillaries</strong> because they have a <strong>thinner membrane</strong>, i.e. a smaller cross-sectional area than arteries and vessels. Circular cross-sectional areas can be observed by cutting a blood vessel following a right angle. Moreover, an artery divides into many capillaries so the velocity in the artery decreases when the blood enters the capillaries. The speed rises again when the blood from all the capillaries are added in the vein.        </div>
+        <div class="illustration-wrapper">
+            <div class="illustration" >
+                <div class="caption" width="500">Figure 7: Line charts comparing pressure and velocity in several types of vessels. OpenStax College. CC BY-SA 3.0
+                </div>
+                <img src="images/blood-velocity.png" alt=""  width="500" >
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="block"><div class="straight-course padded"><h1>Transport of oxygen</h1></div></div>
+    
+    <div class="block">
+        <div class="straight-course padded">
+            <div class="cours-title"></div>
+            <div class="cours-texte">
+                Blood contains 3 types of components: plasma (liquid part of blood), blood cells and platelets.
+                <div class="illustration-wrapper">
+            <div class="illustration" >
+                <div class="caption" width="500">Figure 8: Table comparing the different blood components and their main functions.
+                </div>
+                <table>
+                    <tbody>
+                    <tr>
+                    <td>
+                    <p><span style="font-weight: 400;">COMPONENT</span></p>
+                    </td>
+                    <td>
+                    <p><span style="font-weight: 400;">COMPOSITION</span></p>
+                    </td>
+                    <td>
+                    <p><span style="font-weight: 400;">DESCRIPTION</span></p>
+                    </td>
+                    <td>
+                    <p><span style="font-weight: 400;">FUNCTION</span></p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                    <p><span style="font-weight: 400;">Plasma</span></p>
+                    </td>
+                    <td>
+                    <p><span style="font-weight: 400;">90% of water, ions, nutrients, proteins, waste, dissolved gas</span></p>
+                    </td>
+                    <td>
+                    <ul>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Liquid</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Yellow color</span></li>
+                    </ul>
+                    </td>
+                    <td>
+                    <ul>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Maintain blood pH and osmotic balance</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Molecule transport (proteins like hormones and antibodies, lipides, lipoproteins carrying cholesterol)</span></li>
+                    </ul>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                    <p><span style="font-weight: 400;">Red blood cells (erythrocytes)</span></p>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                    <ul>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Around 7-8 &micro;m in size</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Thinnest in the middle</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">No mitochondrium nor nucleus</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Lifespan of 120 days</span></li>
+                    </ul>
+                    </td>
+                    <td>
+                    <ul>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Transport oxygen in vessels (lack of mitochondria does not allow red blood cells to use the oxygen they carry)</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Release oxygen to surrounding tissues</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Carry carbon dioxide as bicarbonate</span></li>
+                    </ul>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                    <p><span style="font-weight: 400;">White blood cells (leukocytes)</span></p>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                    <ul>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Larger than red blood cells</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Contain nucleus and mitochondria</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Mainly produced in bone marrow</span></li>
+                    </ul>
+                    </td>
+                    <td>
+                    <ul>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Recognising and neutralising virus or bacteria (cf. Immune system chapter)</span></li>
+                    </ul>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                    <p><span style="font-weight: 400;">Platelets (thrombocytes)</span></p>
+                    </td>
+                    <td>
+                    <p><span style="font-weight: 400;">Megakaryocyte cells fragments</span></p>
+                    </td>
+                    <td>
+                    <ul>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Disc-shaped</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">2-3 &micro;m in diameter</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">No nucleus</span></li>
+                    </ul>
+                    </td>
+                    <td>
+                    <ul>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Blood clotting when a vessel is damaged</span></li>
+                    <li style="font-weight: 400;"><span style="font-weight: 400;">Stop bleeding</span></li>
+                    </ul>
+                    </td>
+                    </tr>
+                    </tbody>
+                    </table>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>  
+
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper right">
+                <div class="illustration" >
+                    <div class="caption" width="500">Figure 9: Erythrocytes.J. Polka, CC BY-SA 4.0                        
+                    </div>
+                    <img src="images/erythrocytes.png" alt=""  width="500" >
+                </div>
+            </div>
+            
+            <div class="text-holder left">
+                <div class="cours-title">Erythrocytes</div>
+                <br>
+                <br>
+                Erythrocytes are thinner in the middle of the cell than on the outside: this structure increases the contact surface and allows a <strong>better diffusion of oxygen</strong> through the membrane. Since they do not have any mitochondrium, red blood cells produce their ATP via <strong>anaerobic metabolism</strong>.
+                In patients suffering from <strong>sickle cell disease</strong>, hemoglobin (cf. “Transport of gas in the blood” part) has an unusual shape which deforms erythrocytes. They are curved like faucils. This trouble strongly impacts the cardiovascular system, because red blood cells block arterioles and capillaries, stopping the distribution of oxygen and nutrients and the evacuation of carbon dioxide.
+                </div>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper left">
+                <div class="illustration" >
+                    <div class="caption" width="500">Figure 10: Differentiated leukocytes (cf. Immune system chapter).
+                        OpenStax College. CC BY-A 3.0                                               
+                    </div>
+                    <img src="images/leukocytes.png" alt=""  width="500" >
+                </div>
+            </div>
+            
+            <div class="text-holder right">
+                <div class="cours-title">leukocytes</div>
+                <br>
+                <br>
+                There are 5 main categories of leukocytes, which <strong>fight infections</strong>. Some are phagocytes that absorb microorganisms and dead cells. They can also develop as lymphocytes, involved in immune reactions.
+                A healthy human body contains 5 to 10x10<sup>9</sup> leukocytes, but this number increases during infections.
+                <strong>Leukemia</strong> is a cancer caused by an accumulation of white blood cells, either through the proliferation of immortal leukocytes or through an overproduction of immature leukocytes.
+                
+                </div>
+        </div>
+    </div>
+
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper right">
+                <div class="illustration" >
+                    <div class="caption" width="500">Figure 11: Development of platelets.
+                        OpenStax College. CC BY-A 3.0                                                                      
+                    </div>
+                    <img src="images/platelets.png" alt=""  width="400" >
+                </div>
+            </div>
+            
+            <div class="text-holder left">
+                <div class="cours-title">Platelets</div>
+                <br>
+                <br>
+                A platelet is not a cell but a <strong>fragment of the cytoplasm</strong> of a cell from bone marrow, called megakaryocyte. A third of the platelets which enter the blood circulation get stored in the spleen in case they are needed to repair damaged vessels. It remains approximately 10 days in the human organism before being phagocytized.
+                </div>
+        </div>
+    </div>
+
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper right">
+                <div class="illustration" >
+                    <div class="caption" width="500">Figure 12: Result of centrifugation of a blood sample                                  
+                    </div>
+                    <img src="images/centrifugation.png" alt=""  width="400" >
+                </div>
+            </div>
+            
+            <div class="text-holder left">
+                <div class="cours-title"></div>
+                <br>
+                <br>
+                    Although <strong>plasma</strong> is mainly composed of water, it has a crucial role in blood circulation. Water acts as a solvent to <strong>dissolve plasmatic proteins</strong> and ions which maintain the osmotic <strong>equilibrium and the pH of the blood</strong>. Some components of plasma are also involved in clotting and immunity (antibodies).
+                    To study a specific component of blood, it is possible to isolate it through high-speed centrifugation. Three layers appear according to density: plasma at the top, white blood cells and platelets in the middle, and red blood cells at the bottom.
+                                </div>
+        </div>
+    </div>
+
+    <div class="block">
+        
+        <div class="illustration-wrapper">
+            <div class="cours-title">Blood clotting</div>
+            <div class="illustration" >
+                <div class="caption" width="500">Figure 13: Process of blood clotting after a vessel damage. OpenStax College. CC BY-A 3.0                                  
+                </div>
+                <img src="images/clotting.png" alt=""  height="500" >
+            </div>
+        </div>
+    </div>
+
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper left">
+                <div class="illustration" >
+                    <div class="caption" width="500">Figure 14: Process of hematopoiesis.                                 
+                    </div>
+                    <img src="images/blood-prod.png" alt=""  width="500" >
+                </div>
+            </div>
+            
+            <div class="text-holder right">
+                <div class="cours-title">Production of blood cells</div>
+                <br>
+                <br>
+                Blood cells develop from <strong>hematopoietic stem cells</strong> in the red bone marrow through a process called <strong>hematopoiesis or hemopoiesis</strong>. This phenomenon allows the formation of red blood cells, white blood cells and platelets. These stem cells circulate in the blood and bone marrow of every person no matter their age, but they can also be found in the umbilical cord of babies.
+                The bone marrow produces all the red blood cells, all the platelets and 60 to 70 % of the white blood cells, that is the granulocytes. The remaining white blood cells form in the lymphatic tissues such as the thymus, the spleen and lymphatic nodes.
+                
+                                </div>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="straight-course padded"><h1>Composition of blood</h1></div>
+    </div>
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper right">
+                <div class="illustration" >
+                    <div class="caption" width="500">Figure 15: (a) Structure of a hemoglobin molecule. (b) Chemical structure of the iron-containing pigment heme. OpenStax College [CC BY 3.0]                                 
+                    </div>
+                    <img src="images/hemo-strcuture.png" alt=""  width="500" >
+                </div>
+            </div>
+            
+            <div class="text-holder left">
+                <div class="cours-title"></div>
+                <br>
+                <br>
+                Oxygen is transported through arterial blood. One of its properties is the ability to dissolve in the blood. However, only 1.5% of the oxygen reaching blood is transported through this means. The remaining oxygen binds to a circulating protein: the <strong>hemoglobin</strong>.
+                
+                                </div>
+        </div>
+    </div>
+
+
+    <div class="block">
+        <div class="straight-course padded">
+            <div class="cours-texte">
+                Four globin proteins form a molecule of hemoglobin. Each globin is bound to a <strong>Fe2+ -containing pigment heme</strong>. One pigment heme can bind to a single oxygen molecule. Consequently, one hemoglobin can carry 4 molecules of oxygen. Since an erythrocyte contains 300 million hemoglobin molecules, it can hold above 1 billion oxygen molecules. <br><br>
+    I           n the lungs, hemoglobin gets bound to inhaled oxygen through iron. When the first O<sub>2</sub> binds to one globin, the shape of the three others changes to have a better affinity for O<sub>2</sub>. Once all globins are bound to O<sub>2</sub>, the complex forms an <strong>oxyhemoglobin</strong> also known as <strong>R conformation</strong> (“relaxed”). It is transported in vessels to body tissues where some oxygen molecules are released depending on the need for oxygen of the tissue. When a subunit lets its O<sub>2</sub> go, the complex changes its structure again and is called a <strong>deoxyhemoglobin or T conformation</strong> (“tense”). Since the need for oxygen in tissues is not always high, hemoglobin very rarely releases all its oxygen.
+        </div>
+    </div>
+    </div>
+
+    <div class="block">
+        <div class="row">
+            <div class="illustration-wrapper right">
+                <div class="illustration" >
+                    <div class="caption" width="500">Figure 16: Schematic structure of the R- and T- conformation of hemoglobin.
+                    </div>
+                    <img src="images/oxy-binding.png" alt=""  width="500" >
+                </div>
+            </div>
+            
+            <div class="text-holder left">
+                <div class="cours-title"></div>
+                <br>
+                <br>
+                In R conformation, the polypeptide chains get weak and the affinity for oxygen of the heme increases. In T conformation, the polypeptide chains are stronger and the heme has a lower affinity for oxygen.                
+                                </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="block">
+        <div class="straight-course padded">
+            <div class="cours-title"></div>
+            <div class="cours-texte">
+                A few parameters may influence the efficiency of hemoglobin transport such as the pH, influenced by the levels of CO2 (cf. transport of carbon dioxide), and the temperature. Indeed, these two factors change the conformation of proteins, inducing the alteration of their function.
+                Some people may have an insufficient amount of available hemoglobin in their blood, leading to tissues lacking oxygen. This condition is known as <strong>anemia</strong>. The main resulting symptoms are fatigue, unusual heartbeat and shortness of breath.
+                To assess the oxygenation of tissues, doctors measure the <strong>percent saturation</strong>, which is the percentage of hemoglobin sites occupied by oxygen molecules in the patient’s blood. It is calculated by a device called a pulse oximeter. It sends 2 wavelengths of light (red and blue) through the patient’s finger and measures the light at the exit with a photodetector. The absorption of light by hemoglobin is different regarding its saturation or unsaturation with oxygen. The pulse oximeter readings are presented as a curve of O<sub>2</sub> saturation versus oxygen partial pressure. <strong>The higher the partial pressure of O<sub>2</sub>, the more likely oxygen binds</strong> to hemoglobin. On the contrary, a lower partial pressure of O<sub>2</sub> is more likely to induce its release.
+
+    </div>
+    </div>
+    </div>  
+
+
+    <div class="block">
+        <div class="straight-course padded">
+            <div class="cours-title"></div>
+            <div class="cours-texte">
+                On the curve, we notice a diminution of the hemoglobin affinity for O<sub>2</sub> as the CO2 partial pressure increases or as the pH decreases. This is called the <strong>Bohr effect or Bohr shift</strong>, from the Danish physiologist Christian Bohr (father of Niels Bohr who conceived the first model of the atom). If all the parameters are fixed, this effect results in a <strong>shift of the saturation curve to the right</strong>. Consequently, the pH, the PCO2 and the temperature have an influence on the ability of hemoglobin to carry O<sub>2</sub>.On the curve, we notice a diminution of the hemoglobin affinity for O<sub>2</sub> as the CO2 partial pressure increases or as the pH decreases. This is called the Bohr effect or Bohr shift, from the Danish physiologist Christian Bohr (father of Niels Bohr who conceived the first model of the atom). If all the parameters are fixed, this effect results in a shift of the saturation curve to the right. Consequently, the pH, the PCO2 and the temperature have an influence on the ability of hemoglobin to carry O<sub>2</sub>.On the curve, we notice a diminution of the hemoglobin affinity for O<sub>2</sub> as the CO2 partial pressure increases or as the pH decreases. This is called the Bohr effect or Bohr shift, from the Danish physiologist Christian Bohr (father of Niels Bohr who conceived the first model of the atom). If all the parameters are fixed, this effect results in a shift of the saturation curve to the right. Consequently, the pH, the PCO2 and the temperature have an influence on the ability of hemoglobin to carry O<sub>2</sub>.        <div class="illustration-wrapper">
+            <div class="illustration" >
+                <div class="caption" width="500">Figure 17: Hemoglobin dissociation curve. Modified from OpenStax College [CC BY 3.0]
+                </div>
+                <img src="images/oxygen-dissociation.png" alt=""  width="500" >
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="block">
+        <div class="straight-course padded">
+            <div class="cours-title"></div>
+            <div class="cours-texte">
+                <strong>Cooperativity</strong> is a property of proteins and receptors which have several binding sites for ligands. Molecules are said to be cooperative when the fixations of different ligands are dependent on other substrates. The binding of a first ligand will favor the binding of other ones.
+
+    </div>
+    </div>
+    </div> 
+
+    <div class="block">
+        <div class="straight-course padded">
+            <div class="cours-title">Transport of carbon dioxide</div>
+            <div class="cours-texte">
+                <br>
+                <br>
+                <p><span style="font-weight: 400;">Carbon dioxide is a product of cellular respiration and has to be evacuated from the organism through </span><strong>venous blood</strong><span style="font-weight: 400;">. Three processes can be used: dissolution into the blood, binding to hemoglobin and carrying as bicarbonate ion.</span></p>
+                <p>&nbsp;</p>
+                <ul>
+                <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Dissolution of CO</span><span style="font-weight: 400;">2</span></li>
+                </ul>
+                </ul>
+                <p><span style="font-weight: 400;">CO</span><span style="font-weight: 400;">2</span><span style="font-weight: 400;"> is more soluble in blood than O</span><span style="font-weight: 400;">2</span><span style="font-weight: 400;">. As a result, 5 to 7% of the CO2 transported in an organism&rsquo;s blood is dissolved in the plasma.</span></p>
+                <p>&nbsp;</p>
+                <ul>
+                <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Binding to hemoglobin</span></li>
+                </ul>
+                </ul>
+                <p><span style="font-weight: 400;">Around 10% of the CO</span><span style="font-weight: 400;">2</span><span style="font-weight: 400;"> binds to hemoglobin which forms a molecule called carbaminohemoglobin. It can also be carried by other blood proteins.</span></p>
+                <p>&nbsp;</p>
+                <ul>
+                <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Carrying as bicarbonate ion</span></li>
+                </ul>
+                </ul>
+                <p><span style="font-weight: 400;">The remaining CO</span><span style="font-weight: 400;">2</span><span style="font-weight: 400;">, i.e. the majority, is transported as bicarbonate molecules (HCO</span><span style="font-weight: 400;">3</span><span style="font-weight: 400;">-</span><span style="font-weight: 400;">). To reach this form, molecules of CO</span><span style="font-weight: 400;">2</span><span style="font-weight: 400;"> use diffusion to get into the red blood cells. There, a carbonic anhydrase enzyme turns them into carbonic acid H</span><span style="font-weight: 400;">2</span><span style="font-weight: 400;">CO</span><span style="font-weight: 400;">3</span><span style="font-weight: 400;">. Since these molecules are very unstable, they tend to lose a proton H+ and quickly form bicarbonates HCO</span><span style="font-weight: 400;">3</span><span style="font-weight: 400;">-</span><span style="font-weight: 400;">.</span></p>
+                <p><br /><br /><br /></p>
+
+    </div>
+    </div>
+    </div> 
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+       
+        
+    
+    
+    
+    
+    <div id="up-arrow"><i class="fa fa-chevron-up fa-2x"></i></div>
+        
+
+  
+
+    <div class="footer">
+        <div id="container">
+            <button class="learn-more" onclick="window.location.href = 'credits.html';">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">References</span>
+            </button>
+          </div>
+    </div>   
+</body>
+</html>

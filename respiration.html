@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Gas Exchanges: The Heart</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="heart.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <script src="respiration.js"></script>
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>
+<body>
+    <div class="header">
+        <nav class="topnav">
+            <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heart.html">The Heart</a></li>
+            <li><a href="respiration.html">The Lungs</a></li>
+            <li><a href="circulation.html">The blood circulation</a></li>
+            </ul>
+        </nav>
+        </div>
+    <div id="back-image-respiration">
+        <h6>Integration of the air dioxygen to the circulatory system</h6>
+    </div>
+    <!-- <div class="color-strip blue-strip"></div> -->
+            <div class="introduction">
+                <div class="intro-text text-justify">
+                    Since the cells of an organ need O<sub>2</sub> to produce their energy through cellular respiration, the blood system transports O<sub>2</sub> to deliver them. In exchange, blood brings CO<sub>2</sub>, a product of respiration, back to the heart and lungs in order to evacuate it.                </div>
+            </div>
+
+    </div>
+
+
+
+    <div id="particles-js"></div>
+        <div class="block">
+            <div class="straight-course padded">
+                <div class="cours-title">Basic principles of gases</div>
+                <div class="cours-texte">
+                    <p><span style="font-weight: 400;">A gas is a state of matter in which particles are spread out. In gas, each particle is in movement and has a</span><strong> kinetic energy.</strong><span style="font-weight: 400;"> Because of this movement, particles can meet and collide with each others. The force driven by this collide is called </span><strong>pressure</strong><span style="font-weight: 400;">.</span></p>
+                    <p><br /><br /></p>    
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="block">
+            <div class="row">
+                <div class="illustration-wrapper right">
+                    <div class="illustration" >
+                        <div class="caption" width="500">Figure 1: Dalton’s law applied to a mixture of oxygen and nitrogen. CC BY 3.0</div>
+                        <img src="images/pressure.jpg" alt=""  width="500" >
+                    </div>
+                </div>
+                
+                <div class="text-holder left">
+                    <div class="cours-title">Dalton’s law</div>
+                    <br>
+                    <br>
+                    <p><span style="font-weight: 400;">A mixture of gas has a pressure, which is the sum of the </span><strong>partial pressure</strong><span style="font-weight: 400;"> of each gas species. </span></p>
+                    <br>For a mixture of gas : <br>
+                    Ptot = 𝚺 Px &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Where x is one gas.
+    
+                </div>
+            </div>
+        </div>
+    
+        <div class="block">
+            <div class="row">
+                <div class="illustration-wrapper left">
+                    <div class="illustration" >
+                        <div class="caption" width="500">Figure 2: Diffusion across a semipermeable membrane. CC BY 3.0</div>
+                        <img src="images/diffusion.png" alt=""  width="500" >
+                    </div>
+                </div>
+                
+                <div class="text-holder right">
+                    <div class="cours-title">Diffusion</div>
+                    <br>
+                    <br>
+                    <p><span style="font-weight: 400;">The diffusion is a displacement of molecules that </span><span style="font-weight: 400;">tend</span><span style="font-weight: 400;"> to </span><strong>homogenize</strong><span style="font-weight: 400;"> the composition of the medium. A gas always diffuses from the region with the highest partial pressure to the region with the lowest pressure because of the concentration gradient.&nbsp;</span></p>
+                    <p><span style="font-weight: 400;">The</span><strong> concentration gradient</strong><span style="font-weight: 400;"> is the difference </span><span style="font-weight: 400;">between</span><span style="font-weight: 400;"> the concentration of molecules on either side of a thin membrane.&nbsp;</span></p>
+                    <p><span style="font-weight: 400;">Diffusion occurs in solution</span><span style="font-weight: 400;">s</span><span style="font-weight: 400;"> too. Indeed, like in gas, molecules circulate from the most concentrated regions to the less ones</span><span style="font-weight: 400;">.</span></p>
+                    <p><span style="font-weight: 400;">Thus, whether the gas is </span><span style="font-weight: 400;">in gaseous form</span><span style="font-weight: 400;"> or solubilized in a solvent, its movements will be dictated by diffusion.</span></p>
+                    <p><br /><br /><br /></p>
+            </div>
+        </div>
+    
+    
+        <div class="block">
+            <div class="row">
+                <div class="illustration-wrapper right">
+                    <div class="illustration" >
+                        <div class="caption" width="500">Figure 3: The process of osmosis. CC BY 3.0</div>
+                        <img src="images/osmosis.png" alt=""  width="500" >
+                    </div>
+                </div>
+                
+                <div class="text-holder left">
+                    <div class="cours-title">Osmosis</div>
+                    <br>
+                    <br>
+                    <p><span style="font-weight: 400;">It is a type of diffusion in which water goes from one side of the </span><span style="font-weight: 400;">membrane</span><span style="font-weight: 400;"> to the other one to equilibrate the concentration. It will dilute the most concentrated part </span><span style="font-weight: 400;">and concentrate</span><span style="font-weight: 400;"> the other </span><span style="font-weight: 400;">one</span><span style="font-weight: 400;">.</span></p></div>
+            </div>
+        </div>
+    
+    
+    
+        <div class="block">
+            <div class="straight-course padded">
+                <div class="cours-title">Different specialized breathing surfaces</div>
+                <div class="cours-texte">
+                    <br>
+                    <br>
+                    Membrane transport of O<sub>2</sub> and CO<sub>2</sub> molecules is carried out entirely by simple diffusion. The larger the diffusion surface and the shorter the diffusion distance, the faster the gas exchange. This is why breathing surfaces are generally thin and extensive.
+                    Gas exchange conditions vary greatly, depending on whether the source of oxygen, called the respiratory environment, is air or water.
+           
+                </div>
+                
+            </div>
+        </div>
+    
+        
+        <div class="block">
+            <div class="row">
+                <div class="illustration-wrapper left">
+                    <div class="illustration" >
+                        <div class="caption" width="500">Figure 5: Basic structure of the lungs. CC BY 3.0</div>
+                        <img src="images/lungs_scheme.png" alt=""  width="500" >
+                    </div>
+                </div>
+                
+                <div class="text-holder right">
+                    <div class="cours-title">Breathing allows to ventilate the lungs</div>
+                    <br>
+                    <br>
+                    <p><span style="font-weight: 400;">The process of</span><strong> ventilating</strong><span style="font-weight: 400;"> the lungs is called breathing, it consists of alternating </span><strong>inhalation</strong><span style="font-weight: 400;"> and </span><strong>exhalation</strong><span style="font-weight: 400;"> of air.</span></p>
+                    <p>&nbsp;</p>
+                    <table>
+                    <tbody>
+                        <tr>
+                        <td><p><span style="font-weight: 400;">Gas</span></p></td>
+                        <td><p><span style="font-weight: 400;">Atmospheric air (%)</span></p></td>
+                        <td><p><span style="font-weight: 400;">Inhaled air (%)</span></p></td>
+                        <td><p><span style="font-weight: 400;">Alveolar air (%)</span></p></td>
+                        <td><p><span style="font-weight: 400;">Exhaled air (%)</span></p></td>
+                        </tr>
+                        <tr>
+                        <td><p><span style="font-weight: 400;">N</span><span style="font-weight: 400;">2</span></p></td>
+                        <td><p><span style="font-weight: 400;">78</span></p></td>
+                        <td><p><span style="font-weight: 400;">78</span></p></td>
+                        <td><p><span style="font-weight: 400;">78</span></p></td>
+                        <td><p><span style="font-weight: 400;">78</span></p></td>
+                        </tr>
+                        <tr>
+                        <td><p><span style="font-weight: 400;">O</span><span style="font-weight: 400;">2</span></p></td>
+                        <td><p><span style="font-weight: 400;">21</span></p></td>
+                        <td><p><span style="font-weight: 400;">21</span></p></td>
+                        <td><p><span style="font-weight: 400;">14</span></p></td>
+                        <td><p><span style="font-weight: 400;">16</span></p></td>
+                        </tr>
+                        <tr>
+                        <td><p><span style="font-weight: 400;">CO</span><span style="font-weight: 400;">2</span></p></td>
+                        <td><p><span style="font-weight: 400;">0,03</span></p></td>
+                        <td><p><span style="font-weight: 400;">0,03</span></p></td>
+                        <td><p><span style="font-weight: 400;">5,4</span></p></td>
+                        <td><p><span style="font-weight: 400;">4,7</span></p></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <p><span style="font-weight: 400;">This breathing surface consists of the </span><strong>airways</strong><span style="font-weight: 400;"> that connect the atmospheric air to the alveolar air in the lungs.</span></p>
+                    <p><br /><br /></p>
+                    <p><span style="font-weight: 400;">The inhalation begins with the contraction of the diaphragm and rib muscles which will lead to increasing the volume of lung. Thanks to that air will move into the respiratory tract through the nasal fossae, pharynx, larynx, trachea and bronchial tubes until alveoli. Thanks to diffusion, gas will exchange between alveoli and blood.</span></p>
+                    <p>&nbsp;</p>
+                    <p><span style="font-weight: 400;">The exhalation is the opposite mechanism.&nbsp; It begins with the relaxation of diaphragm and rib muscles. So the volume of lungs decreases. Gas in blood will move into the alveoli and leave our body by nose or mouth.</span></p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p><br /><br /><br /></p>
+            </div>
+            </div>
+        </div>
+        <div class="block">
+        
+            <div class="straight-course padded" >
+                <div class="cours-texte">
+                    <br>
+                    <br>
+                    <p><span style="font-weight: 400;">These pathways have a conductive role, and also serve to </span><strong>warm, moisturize and remove dust </strong><span style="font-weight: 400;">from the air. </span><span style="font-weight: 400;">To deal with this last function, secretory cells produce mucus which trap the various particles.</span><span style="font-weight: 400;"> There are also </span><span style="font-weight: 400;">hairs on</span><span style="font-weight: 400;"> cells that move these particles to the pharynx.</span></p>
+                    <p>&nbsp;</p>
+                    <p><span style="font-weight: 400;">Lungs are divided into </span><strong>lobes</strong><span style="font-weight: 400;"> (for humans: 3 on the right and 2 on the left). In the lobe of a lung, we find a network of bronchus which are finished by the bronchioles, at the end of which, are the </span><strong>alveolar sacs</strong><span style="font-weight: 400;">. This structure is known as a</span><strong> bronchial tree</strong><span style="font-weight: 400;">.</span></p>
+                    <p>&nbsp;</p>
+                    <p><span style="font-weight: 400;">The wall of the alveoli is </span><strong>thin</strong><span style="font-weight: 400;"> and </span><strong>highly vascularized</strong><span style="font-weight: 400;">. Thanks to that</span><span style="font-weight: 400;">,</span><span style="font-weight: 400;"> diffusion can occur. </span><span style="font-weight: 400;">Indeed, t</span><span style="font-weight: 400;">he partial pressure of </span><span style="font-weight: 400;">O</span><span style="font-weight: 400;"><sub>2</sub></span><span style="font-weight: 400;"> is higher in the air that we </span><span style="font-weight: 400;">inhale</span><span style="font-weight: 400;"> than in the artery. </span><span style="font-weight: 400;">As a result,</span> <span style="font-weight: 400;">O</span><span style="font-weight: 400;"><sub>2</sub></span><span style="font-weight: 400;"> move</span><span style="font-weight: 400;">s</span><span style="font-weight: 400;"> from the air to </span><span style="font-weight: 400;">the</span><span style="font-weight: 400;"> artery.</span></p>
+                    <p><span style="font-weight: 400;">Conversely, </span><span style="font-weight: 400;">CO</span><span style="font-weight: 400;"><sub>2</sub></span><span style="font-weight: 400;"> moved </span><span style="font-weight: 400;">toward</span><span style="font-weight: 400;"> the opposite </span><span style="font-weight: 400;">direction of O</span><span style="font-weight: 400;"><sub>2</sub></span><span style="font-weight: 400;">. The partial pressure of </span><span style="font-weight: 400;">CO</span><span style="font-weight: 400;"><sub>2</sub></span><span style="font-weight: 400;"> is higher in the veins than in the air that we inhaled. So </span><span style="font-weight: 400;">CO</span><span style="font-weight: 400;"><sub>2</sub></span> <span style="font-weight: 400;">move</span><span style="font-weight: 400;">s</span><span style="font-weight: 400;"> from the veins to the air.</span></p>
+                    This mechanism is called <strong>osmotic pressure</strong>
+                    <p><br /><br /></p>
+                    <p><span style="font-weight: 400;">The cells in the wall are </span><strong>pneumocytes</strong><span style="font-weight: 400;">. There are two groups of pneumocytes: the primary ones which allow gas exchanges and the secondary ones which secrete a liquid (the surfactant), a mixture of phospholipids (90%) and proteins (10%).</span><span style="font-weight: 400;"> The latter</span><span style="font-weight: 400;"> will form a film on the surface of the alveoli. This liquid prevents the cells from folding back on themselves and facilitates gas exchanges.</span></p>
+                    <p><span style="font-weight: 400;">The gas diffuses through the wall whose total surface area is very large (humans have 300 millions alveoli per lung), around</span><strong> 70 </strong><strong>m</strong><strong><sup>2</sup></strong><strong> per lung</strong><span style="font-weight: 400;">.</span></p>
+                    <p><br /><br /><br /></p>
+           
+                </div>
+                
+            </div>
+        </div>
+    
+        
+    
+    
+    
+    
+    
+    
+        <div class="circle-menu circle-menu-respi">
+            <ul>
+                <li class="circles"><div id="circle-amphibians-respi">Amphibians</div></li>
+                <li class="circles"><div id="circle-birds-respi">Birds</div></li>
+                <li class="circles"><div id="circle-fishs-respi">Fishes</div></li>
+                <li class="circles"><div id="circle-insects-respi">Insects</div></li>
+            </ul>
+        </div>
+    
+    
+    
+    <div id="cours-amphibians-respi" class="cours">
+        <div class="straight-course padded">
+            <div class="cours-title">Amphibians</div>
+            <br><br>
+            <p><span style="font-weight: 400;">Amphibians are quite special because they </span><strong>change their breathing system during their life</strong><span style="font-weight: 400;">. Larva have gills, but adults use lungs. Gills are generally not useful to terrestrial animals. This is because a large moistened membrane surface exposed to the air would lose too much water through spraying. In addition, the gills would collapse because the fine filaments of their structure would no longer float in the water and would form a compact mass. In most land animals, therefore, the breathing surfaces are </span><strong>inside the body</strong><span style="font-weight: 400;"> and communicate with the outside world through the gills.</span></p>
+            <p><span style="font-weight: 400;">The oxygen supply is due to inhalation of air. But most amphibians are able to exchange gases in water or air thanks to their skin if their </span><span style="font-weight: 400;">skin is </span><span style="font-weight: 400;">wet enough.</span></p>
+            <p><span style="font-weight: 400;">An Amphibian, like a frog, ventilates its lungs through a </span><strong>positive pressure breathing</strong><span style="font-weight: 400;"> mechanism, which inflates the lungs by forcing air into them thanks to the expansion of the buccal cavity.</span></p>
+            <p>&nbsp;</p>
+            <p><span style="font-weight: 400;">Remember, the ideal </span><span style="font-weight: 400;">gas</span><span style="font-weight: 400;"> law states that if the volume of a mixture of gases increases, the pressure decreases. </span><span style="font-weight: 400;">Consequently</span><span style="font-weight: 400;"> the pressure inside the buccal cavity will decrease, resulting in a pressure gradient between the buccal cavity and the lungs, and exterior environment. This gradient causes air to be drawn from the outside to </span><span style="font-weight: 400;">the inside of</span><span style="font-weight: 400;"> the buccal cavity and from the lungs to the buccal cavity.</span></p>
+            <p>&nbsp;</p>
+            <p><span style="font-weight: 400;">The</span><strong> elastic relaxation</strong><span style="font-weight: 400;"> of the lungs and the compression by the muscle</span><span style="font-weight: 400;">s </span><span style="font-weight: 400;">of the body force air out of the lungs during exhalation.</span></p>
+            <p><br /><br /><br /></p>
+            <div class="illustration-wrapper">
+                <div class="illustration">
+                    <div class="caption" width="500">Figure 8:Amphibiens breath.  CC BY 3.0
+                    </div>
+                    <img src="images/amphibian-respi.png" alt=""  width="500" >
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div id="cours-insects-respi" class="cours">
+        <div class="straight-course padded">
+            <div class="cours-title">Insects</div>
+            <br><br>
+            <p><span style="font-weight: 400;">Insects have </span><strong>spiracles</strong><span style="font-weight: 400;"> on their exoskeleton to allow air to enter the trachea. In insects, the tracheal tubes mainly deliver oxygen directly into the insect tissues.&nbsp; The spiracles can be opened and closed effectively to reduce water loss. This is done by contracting the muscles surrounding the spiracle. To open, the muscle relaxes.&nbsp;</span></p>
+            <p><span style="font-weight: 400;">These muscles are controlled by the central nervous system but can also react to localized chemical stimuli. Many aquatic insects have similar methods of closure to prevent water from entering the trachea. Spiracles can also be surrounded by hair to minimize air movement around the opening, thus minimizing water loss.</span></p>
+            <p>&nbsp;</p>
+            <p><span style="font-weight: 400;">Spiracles are located laterally along the thorax and abdomen of most insects (usually one pair of spiracles per body segment). Air flow is regulated by small muscles that operate one or two flap valves in each spiracle that contract to close the spiracle, or relax to open it.</span></p>
+            <p><br /><br /><br /></p>
+            <div class="illustration-wrapper">
+                <div class="illustration">
+                    <div class="caption" width="500">Figure 9: trachéal system.  CC BY 3.0
+                    </div>
+                    <img src="images/tracheal-system.png" alt=""  width="500" >
+                </div>
+            </div>
+    </div>
+    
+    </div>
+    
+    
+    <div id="cours-birds-respi" class="cours">
+        <div class="straight-course padded">
+            <div class="cours-title">Birds</div>
+            <br>
+            <br>
+            <p><span style="font-weight: 400;">The </span><strong>active phase</strong><span style="font-weight: 400;"> of breathing in birds is exhalation, requiring a contraction of their respiratory muscles. Relaxation of these muscles </span><span style="font-weight: 400;">produces</span><span style="font-weight: 400;"> inhalation.</span></p>
+            <p><span style="font-weight: 400;">When a bird breathes, the air passes </span><span style="font-weight: 400;">through</span><span style="font-weight: 400;"> the gas exchange surface in only one direction. The new air entering does not mix with the old air that has participated in the gas exchange.</span></p>
+            <p><span style="font-weight: 400;">Unlike mammals, birds have </span><strong>aerian bags</strong><span style="font-weight: 400;">. Most birds have 9 bags. During inhalation, all air bags fill, and during exhalation, all air bags empty.</span></p>
+            <p><br /><br /><br /></p>
+        <br>
+    
+        <p><span style="font-weight: 400;">Instead of having alveoli, which are </span><strong>dead ends</strong><span style="font-weight: 400;">, bird</span><span style="font-weight: 400;">s</span><span style="font-weight: 400;"> lungs have thin ducts called parabronchus.</span></p>
+        <p><span style="font-weight: 400;">Birds lungs are proportionally smaller than mammalian lungs </span><span style="font-weight: 400;">compared to their body size</span><span style="font-weight: 400;">. They are also rigid, </span><span style="font-weight: 400;">meaning </span><span style="font-weight: 400;">that </span><span style="font-weight: 400;">their</span><span style="font-weight: 400;"> volume </span><span style="font-weight: 400;">does not </span><span style="font-weight: 400;">change during respiration.</span></p>
+        <p><br /><br /><br /></p>
+            <p><br /><br /><br /></p>
+            <div class="illustration-wrapper">
+            <div class="illustration">
+                <div class="caption" width="500">Figure 6: Structure of birds lungs.  CC BY 3.0</div>
+                <img src="images/bird-respi.png" alt=""  width="500" >
+            </div>
+        </div>
+    </div>
+
+    
+    </div>
+    
+    
+    <div id="cours-fishs-respi" class="cours">
+        <div class="straight-course padded">
+            <div class="cours-title">Fishes</div>
+            <br>
+            <br>
+            <p><span style="font-weight: 400;">The gills are vascularized tissue</span><span style="font-weight: 400;">s</span><span style="font-weight: 400;"> that form a </span><strong>respiratory exchange surface</strong><span style="font-weight: 400;">. They are the main specialized gas exchange surface in aquatic animals.</span></p>
+            <p><br /><br /><br /></p>
+            <ul>
+            <h3>Composition of gills</h3>
+            </ul>
+            <p><span style="font-weight: 400;">The gills of vertebrate typically develop in the walls of the pharynx, along a series of gill slits opening to the </span><span style="font-weight: 400;">outside</span><span style="font-weight: 400;">.&nbsp;</span></p>
+            <p><span style="font-weight: 400;">A fish has four gills under each operculum. A gill consists of a bone (gill arch) on which two gill blades made of fine lamella are inserted (about <sub>2</sub>00 per blade). Each lamella is very richly irrigated and the blood is separated from the water by only a few micrometres or even less than one micrometre.</span></p>
+            <p><br /><br /><br /></p>
+            <ul>
+            <h3>How gills work</h3>
+            </ul>
+            <p><span style="font-weight: 400;">Water enters through the mouth and exits through the gills, with sufficient water flow created by the animal's movement and/or by pumping movements of the mouth or gills. In the process, the blood captured oxygen dissolved in the water and released carbon dioxide previously dissolved in the blood by osmotic diffusion.</span></p>
+            <div class="illustration-wrapper">
+                <div class="illustration">
+                    <div class="caption" width="500">Figure 7: Structure of the fish gills.  CC BY 3.0</div>
+                    <img src="images/gills.png" alt=""  width="500" >
+                </div>
+            </div>
+        </div>
+    
+    </div>
+        
+    
+    
+    
+    
+    <div id="up-arrow"><i class="fa fa-chevron-up fa-2x"></i></div>
+        
+
+  
+
+    <div class="footer">
+        <div id="container">
+            <button class="learn-more" onclick="window.location.href = 'credits.html';">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">References</span>
+            </button>
+          </div>
+    </div>   
+</body>
+</html>
